@@ -31,6 +31,3 @@ bin/
 # fabric
 
 run/
-gradle/wrapper/gradle-wrapper.jar
-gradlew.bat
-gradlew

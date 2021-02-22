@@ -15,11 +15,11 @@ public class SplashesAPI implements ModInitializer {
         System.out.println("hello");
     }
 
-    public void addSplash(String splash) {
+    public static void addSplash(String splash) {
         splashesToAdd.add(splash);
     }
 
-    public void removeSplash(String splash) {
+    public static void removeSplash(String splash) {
         splashesToRemove.add(splash);
     }
 
