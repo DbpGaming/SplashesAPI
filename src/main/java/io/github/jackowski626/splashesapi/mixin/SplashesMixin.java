@@ -1,12 +1,9 @@
 package io.github.jackowski626.splashesapi.mixin;
 
 import io.github.jackowski626.splashesapi.SplashesAPI;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
+import net.fabricmc.api.*;
+import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
@@ -21,7 +18,5 @@ public class SplashesMixin {
     private void inject(CallbackInfo info) {
         splashTexts.addAll(SplashesAPI.getAllSplashesToAdd());
         splashTexts.removeAll(SplashesAPI.getAllSplashesToRemove());
-        System.out.print(splashTexts);
-        SplashesAPI.resetRemoveStatus();
     }
 }
